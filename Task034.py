@@ -4,12 +4,13 @@ def poems(str):
     for word in str:
         sum = 0
         for i in word:
-            if i in 'аеёиоуыэюя':
+            if i in 'фыварфрони':
                 sum += 1
         list_1.append(sum)
     return len(list_1) == list_1.count(list_1[0])
 
 text = input("Введите фразу: ")
+
 if poems(text):
     print('Парам пам-пам')
 else:
